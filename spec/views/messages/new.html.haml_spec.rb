@@ -8,13 +8,8 @@ describe "messages/new.html.haml" do
     assigns[:recent_messages] = [] 
   end
   
-  it "renders the messages/form" do
-    template.should_receive(:render).with(
-      :partial => "form", :locals => { :message => assigns[:message] }
-    ) 
-    render
-  end
-   
+  it_should_behave_like "a template that renders the messages/form partial"
+     
   it "renders recent messages" do 
     assigns[:recent_messages] = [ 
       mock_model(Message, :text => "Message 1").as_null_object, 
