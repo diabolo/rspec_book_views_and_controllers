@@ -1,0 +1,5 @@
+.sidebar
+  %ul.recent_messages
+    = @recent_messages.each do |message|
+      %li.message
+        =h message.text
