@@ -1,0 +1,17 @@
+log/*.*
+tmp/*
+public/cache/**/*
+doc/api
+doc/app
+config/database.yml
+vendor/plugins/doc/**/*
+public/stylesheets/*
+public/images/products/*
+db/*.sqlite3
+db/*.sqlite3-journal
+db/schema.rb
+db/*journal*
+coverage/*
+.DS_Store
+vendor/rails
+features/webrat/test.feature
